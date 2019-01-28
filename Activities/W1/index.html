@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dialer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="phone.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="tab_bar" align="center">
+      <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+       <!-- onclick=this.style.background='#9191ba' -->
+      <button type="button" class="btn btn-default" id="dialerButton">Dialer</button>
+      <button type="button" class="btn btn-default" id="contactsButton">Contact List</button>
+      <button type="button" class="btn btn-default" id="AddContactButton">Add Contact</button>
+
+    </div>
+
+
+    <div class="content" id="content" align="center">
+
+      <div class="screens" id="content_dialer">
+
+        <b> Dialer</b> <br>
+        <br>
+        <div class="dialingNumbers" id="numbers">
+          <button type="button" class="btn btn-default" id="d1">1</button>
+          <button type="button" class="btn btn-default" id="d2">2</button>
+          <button type="button" class="btn btn-default" id="d3">3</button>
+          <br>
+          <button type="button" class="btn btn-default" id="d4">4</button>
+          <button type="button" class="btn btn-default" id="d5">5</button>
+          <button type="button" class="btn btn-default" id="d6">6</button>
+          <br>
+          <button type="button" class="btn btn-default" id="d7">7</button>
+          <button type="button" class="btn btn-default" id="d8">8</button>
+          <button type="button" class="btn btn-default" id="d9">9</button>
+          <br>
+          <button type="button" class="btn btn-default" id="dstar">*</button>
+          <button type="button" class="btn btn-default" id="d0">0</button>
+          <button type="button" class="btn btn-default" id="dpound">#</button>
+          <br>
+          <button type="button" class="btn btn-success active" id="ddial">Dial</button>
+          <button type="button" class="btn btn-danger active" id="dclear">Clear</button>
+          <br>
+        </div>
+
+      </div>
+
+
+      <div class="screens" id="content_list">
+
+        <b>Contact List</b> <br>
+        <br>
+
+        <button type="button" class="btn btn-outline-dark" id="GhazalehKazeminejad">Ghazaleh Kazeminejad</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="KevinCostner">Kevin Costner</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="BillGates">Bill Gates</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="BarackObama">Barack Obama</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="JimCarrey">Jim Carrey</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="EllenDeGeneres">Ellen DeGeneres</button>
+        <br>
+
+      </div>
+
+      <div class="screens" id="content_addToList">
+        <b>Add Contact</b> <br>
+        <br>
+        <form>
+          <label for="name">Name: </label>
+          <br>
+          <input id="name" placeholder="Jane Smith">
+          <br><br>
+          <label for="phone">Phone Number: </label>
+          <br>
+          <input id="phone" placeholder="7209876543">
+          <br><br>
+          <label for="email">Email Address: </label>
+          <br>
+          <input id="email" placeholder="jane.smith@gmail.com">
+        </form>
+        <br>
+        <!-- <button class="addContact" id="addContact">Add Contact</button>
+        <button class="addContact" id="clearContact">Clear</button> -->
+
+        <button type="button" class="btn btn-success active" id="addContact">Add Contact</button>
+        <button type="button" class="btn btn-danger active" id="clearContact">Clear</button>
+      </div>
+
+
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="phone.js"></script>
+  </body>
+</html>
