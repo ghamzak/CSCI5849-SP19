@@ -32,7 +32,7 @@ margin: 5px;
 
 .btn.btn-default.focus,
 .btn.btn-default:focus {
-  background-color: green;
+  background-color: #8080ff;
 }
 
 .DialNumbers:hover {
