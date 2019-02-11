@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dialer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="phone.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="" aria-live="polite">
+      <div class="tab_bar" align="center"role="navigation">
+        <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+         <!-- onclick=this.style.background='#9191ba' -->
+        <button type="button" class="btn btn-default" id="dialerButton" accesskey="R">Diale<u>r</u></button>
+        <button type="button" class="btn btn-default" id="contactsButton" accesskey="L">Contact <u>L</u>ist</button>
+        <button type="button" class="btn btn-default" id="AddContactButton" accesskey="A"><u>A</u>dd Contact</button>
+        <button type="button" class="btn btn-default" id="HelpButton" accesskey="H"><u>H</u>elp</button>
+
+      </div>
+    </div>
+
+
+    <div class="content" id="content" align="center" role="main">
+
+      <div class="screens" id="content_dialer">
+
+        <h2> Dialer</h2> <br>
+        <form>
+				  <input id="number_input"/>
+			  </form>
+        <br>
+        <div class="dialingNumbers" id="numbers">
+          <button type="button" class="btn btn-default" id="d1" accesskey="1">1</button>
+          <button type="button" class="btn btn-default" id="d2" accesskey="2">2</button>
+          <button type="button" class="btn btn-default" id="d3" accesskey="3">3</button>
+          <br>
+          <button type="button" class="btn btn-default" id="d4" accesskey="4">4</button>
+          <button type="button" class="btn btn-default" id="d5" accesskey="5">5</button>
+          <button type="button" class="btn btn-default" id="d6" accesskey="6">6</button>
+          <br>
+          <button type="button" class="btn btn-default" id="d7" accesskey="7">7</button>
+          <button type="button" class="btn btn-default" id="d8" accesskey="8">8</button>
+          <button type="button" class="btn btn-default" id="d9" accesskey="9">9</button>
+          <br>
+          <button type="button" class="btn btn-default" id="dstar" accesskey="*">*</button>
+          <button type="button" class="btn btn-default" id="d0" accesskey="0">0</button>
+          <button type="button" class="btn btn-default" id="dpound" accesskey="#">#</button>
+
+        </div>
+        <div class="dialingControls" id="dialer_controls">
+          <button type="button" class="btn btn-success active" id="ddial" accesskey="D"><u>D</u>ial</button>
+          <button type="button" class="btn btn-danger active" id="dclear" accesskey="C"><u>C</u>lear</button>
+
+        </div>
+
+      </div>
+
+
+      <div class="screens" id="content_list">
+
+        <h1>Contact List</h1> <br>
+        <br>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Phone </th>
+            <th>Email</th>
+            <th>Picture</th>
+          </tr>
+          <tr>
+            <td>Ghazaleh Kazeminejad</td>
+            <td>
+              <a href="tel:+1-919-961-9650">9199619650</a>
+            </td>
+            <td>ghka9436@colorado.edu</td>
+            <td>
+              <img src="static/gee.JPEG" alt="Ghazaleh's Picture" width="100" height="100">
+            </td>
+          </tr>
+          <tr>
+            <td>Kevin Costner</td>
+            <td>1234567890</td>
+            <td>Kevin.Costner@hollywood.com</td>
+            <td>
+              <img src="static/Kevin_Costner.jpg" alt="Kevin's Picture" width="100" height="100">
+            </td>
+          </tr>
+          <tr>
+            <td>Bill Gates</td>
+            <td>0987654321</td>
+            <td>Bill.Gates@Microsoft.com</td>
+            <td>
+              <img src="static/BillGates.jpg" alt="Bill's Picture" width="100" height="100">
+            </td>
+          </tr>
+          <tr>
+            <td>Barack Obama</td>
+            <td>5432167890</td>
+            <td>Barack.Obama@potus.org</td>
+            <td>
+              <img src="static/barackObama.jpg" alt="Barack's Picture" width="100" height="100">
+            </td>
+          </tr>
+          <tr>
+            <td>Ellen DeGeneres</td>
+            <td>6789054321</td>
+            <td>Ellen.DeGeneres@ellenshow.com</td>
+            <td>
+              <img src="static/ellen.jpg" alt="Ellen's Picture" width="100" height="100">
+            </td>
+          </tr>
+        </table>
+
+        <!-- <button type="button" class="btn btn-outline-dark" id="GhazalehKazeminejad">Ghazaleh Kazeminejad</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="KevinCostner">Kevin Costner</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="BillGates">Bill Gates</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="BarackObama">Barack Obama</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="JimCarrey">Jim Carrey</button>
+        <br>
+        <button type="button" class="btn btn-outline-dark" id="EllenDeGeneres">Ellen DeGeneres</button>
+        <br> -->
+
+      </div>
+
+      <div class="screens" id="content_addToList">
+        <h1>Add Contact</h1> <br>
+        <br>
+        <form>
+          <label for="name">Name: </label>
+          <br>
+          <input id="name" placeholder="Jane Smith">
+          <br><br>
+          <label for="phone">Phone Number: </label>
+          <br>
+          <input id="phone" placeholder="7209876543">
+          <br><br>
+          <label for="email">Email Address: </label>
+          <br>
+          <input id="email" placeholder="jane.smith@gmail.com">
+        </form>
+        <br>
+        <!-- <button class="addContact" id="addContact">Add Contact</button>
+        <button class="addContact" id="clearContact">Clear</button> -->
+
+        <button type="button" class="btn btn-success active" id="addContact" accesskey="t">Add Con<u>t</u>act</button>
+        <button type="button" class="btn btn-danger active" id="clearContact" accesskey="e">Cl<u>e</u>ar</button>
+      </div>
+
+      <div class="screens" id="content_help">
+        <!-- to be filled -->
+        <h1>Accessibility Features</h1><br>
+        <table>
+          <tr>
+            <th>Accessibility Feature</th>
+            <th>Keyboard Shortcut</th>
+          </tr>
+          <tr>
+            <td>Tab Key Control</td>
+            <td>Tab key</td>
+          </tr>
+          <tr>
+            <td>Keyboard Shortcuts</td>
+            <td>
+              Common Windows Browsers: Shift + Alt + [accesskey] <br>
+              Common Mac Browsers: Control + Option + [accesskey] <br>
+              Note: [accesskey] is the underlined character, and the numbers on the dial pad.
+            </td>
+          </tr>
+          <tr>
+            <td>Accessible Tables</td>
+            <td>Especially helps screen reader users. </td>
+          </tr>
+          <tr>
+            <td>
+              Accessible Page Sections
+            </td>
+            <td>Especially helps screen reader users. </td>
+          </tr>
+          <tr>
+            <td>Citations:</td>
+            <td>
+              <ul>
+                <li>Kevin Costner Photo: <a href="https://en.wikipedia.org/wiki/Kevin_Costner">wikipedia.org</a> </li>
+                <li>Bill Gates Photo: <a href="https://twitter.com/billgates">twitter.com</a> </li>
+                <li>Barack Obama Photo: <a href="https://www.biography.com/people/barack-obama-12782369">biography.com</a> </li>
+                <li>Ellen DeGeneres Photo: <a href="https://speakerpedia.com/speakers/ellen-degeneres">speakerpedia.com</a> </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="phone.js"></script>
+  </body>
+</html>
