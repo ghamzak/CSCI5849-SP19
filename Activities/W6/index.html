@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<p> </p>
+		<!-- <div class="switch">
+			<div class="row1">
+				<input type="image" src="red-arrow-hi.png" width="5%" id="uparrow" />
+				<p> </p>
+			</div>
+			<div class="row2">
+				<input type="image" src="red-arrow-hi.png" width="5%" id="leftarrow" />
+				<input type="image" src="circle.png" width="5%" id="circle" />
+				<input type="image" src="red-arrow-hi.png" width="5%" id="rightarrow" />
+			</div>
+			<div class="row3">
+				<p> </p>
+				<input type="image" src="red-arrow-hi.png" width="5%" id="downarrow" />
+			</div>
+		</div> -->
+		<div id="comments">
+			<h2>About this app</h2>
+			<p>This app uses switch control for a calculator application.</p>
+			<h2>Instructions</h2>
+			<table class="instructions" style="border: 1px solid black;">
+				<tr>
+					<th style="border: 1px solid black;">Activating switch control</th>
+					<th style="border: 1px solid black;">five-button interface</th>
+					<th style="border: 1px solid black;">three-button interface</th>
+				</tr>
+				<tr>
+					<td style="text-align: center; border: 1px solid black;">Press space</td>
+					<td>
+						<table class="innerTable" style="border: 0px;" width="100%">
+							<tr>
+								<td>"a"</td>
+								<td> --> </td>
+								<td>left</td>
+							</tr>
+							<tr>
+								<td>"s"</td>
+								<td> --> </td>
+								<td>right</td>
+							</tr>
+							<tr>
+								<td>"w"</td>
+								<td> --> </td>
+								<td>up</td>
+							</tr>
+							<tr>
+								<td>"z"</td>
+								<td> --> </td>
+								<td>down</td>
+							</tr>
+							<tr>
+								<td>"Enter"</td>
+								<td> --> </td>
+								<td>click</td>
+							</tr>
+						</table>
+					</td>
+					<td style="border: 1px solid black;">
+						<table class="innerTable" style="border: 0px;" width="100%">
+							<tr>
+								<td>"1"</td>
+								<td> --> </td>
+								<td>left</td>
+							</tr>
+							<tr>
+								<td>"2"</td>
+								<td> --> </td>
+								<td>right</td>
+							</tr>
+							<tr>
+								<td>"Enter"</td>
+								<td> --> </td>
+								<td>click</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<h2>Testing</h2>
+			<ul>
+				<li>Test Protocol</li>
+				<ul>
+					<li>Comparing two different versions of the interface (3-key vs 5-key)</li>
+					<li>The user inputs the following equations on the calculator. After each equation, the output should be cleared using the C key on the app.</li>
+					<ul>
+						<li>12 + 34 =</li>
+						<li>5 * 6 = </li>
+						<li>87 / 3 = </li>
+						<li>90 - 28 = </li>
+					</ul>
+					<li>We ran this test 3 times in each condition.</li>
+					<li>For each trial, the time needed to complete the entire protocol was recorded, and any errors that occur were counted. </li>
+					<li>To simulate real-world use, if the user made an error, they re-tried until they successfully entered the equation.</li>
+				</ul>
+				<li>Test results</li>
+				<ul>
+					<li>the average times and number of errors for each of the two conditions</li>
+					<ul>
+						<li>3-key condition:</li>
+						<li>average time: 3':21"</li>
+						<li>number of errors: 0</li>
+					</ul>
+					<ul>
+						<li>5-key condition:</li>
+						<li>average time: 3':20"</li>
+						<li>number of errors: 8</li>
+					</ul>
+					<li>Conclusion:</li>
+					<ul>
+						<li>Using only 2 navigation buttons is less prone to causing errors given the switch control design and the type of buttons we were using for it, since the buttons used in 4-way navigation were so close to other unfunctional buttons on the keyboard.</li>
+						<li>The errors made in the 4-way navigation system caused delays, hence the average time for completing the task was the same for both conditions.</li>
+					</ul>
+					<!-- <li>Include a figure if it will help communicate the results.</li> -->
+				</ul>
+				<!-- <li>Anything else you have tried out</li> -->
+			</ul>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
