@@ -1,0 +1,32 @@
+/* .button1 {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+} */
+
+.button1 {
+  background-color: lightgrey;
+  width: 500px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+a:link, a:visited {
+  background-color: #ccccff;
+  color: black;
+  font-size: 36px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+/* table {
+  align: center;
+} */
